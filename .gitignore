@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+node_modules/
+logs/
+config_auth.json
+config_http.json
+uploads/
+~$*
+desktop.ini
+*.env
+.env.*
+__pycache__/
+*.pyc
