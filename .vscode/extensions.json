@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "davidAnson.vscode-markdownlint",
+    "shd101wyy.markdown-preview-enhanced",
+    "bierner.markdown-mermaid"
+  ]
+}
