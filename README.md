@@ -1,10 +1,10 @@
 # python-virus-check
 
-## Environment Setup
+## 🌳 Environment Setup
 
 ### 🐍 Python Environment Setup
 
-This project uses **Python 3.13.2**.
+This project uses **Python 3.13.2**.  
 The virtual environment(`venv`) should be created inside the `server` directory, and dependencies should be installed from `requirements.txt`.
 
 ``` bash
