@@ -7,17 +7,17 @@ export const scanFile = async(file) => {
     const formData = new FormData();
     formData.append("file", file);
 
-    const responce = await axios.post(`${BASE_URL}/scan/file`, formData, {
+    const response = await axios.post(`${BASE_URL}/scan/file`, formData, {
         headers: {
             "Content-Type": "multipart/form-data",
         },
     });
-    return responce.data;
+    return response.data;
 };
 
 export const scanUrl = async(url) => {
-    const responce = await axios.post(`${BASE_URL}/scan/url`, { url });
-    return responce.data;
+    const response = await axios.post(`${BASE_URL}/scan/url`, { url });
+    return response.data;
 };
 
 
