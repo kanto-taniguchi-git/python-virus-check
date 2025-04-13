@@ -4,7 +4,7 @@ import React from "react";
 function Result() {
   return (
     <div className="p-4">
-      <h1 className="text-xl">Scan Results</h1>
+      <h1 className="text-xl">Scan Result</h1>
     </div>
   );
 }
