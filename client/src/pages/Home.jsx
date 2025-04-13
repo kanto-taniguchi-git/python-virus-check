@@ -28,7 +28,7 @@ function Home() {
 
             <div className="mb-6">
                 <h2 className="text-lg mb-2">URL Scan</h2>
-                <UrlForm onSubmit={handleFile} />
+                <UrlForm onSubmit={handleUrl} />
             </div>
 
             {
