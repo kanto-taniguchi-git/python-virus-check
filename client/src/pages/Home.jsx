@@ -1,20 +1,22 @@
 // client/src/pages/Home.jsx
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Dropzone from "./../components/Dropzone";
 import UrlForm from "./../components/UrlForm";
 import { scanFile, scanUrl } from "./../api/virusTotal";
 
 function Home() {
     const [result, setResult] = useState(null);
+    const navigate = useNavigate();
 
     const handleFile = async (file) => {
-        const responce = await scanFile(file);
-        setResult(responce);
+        const response = await scanFile(file);
+        navigate("/result", { state: { result: response } });
     };
 
     const handleUrl = async (url) => {
-        const responce = await scanUrl(url);
-        setResult(responce);
+        const response = await scanUrl(url);
+        navigate("/result", { state: { result: response } });
     }
 
     return (
